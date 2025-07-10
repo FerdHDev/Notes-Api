@@ -9,8 +9,8 @@ const signUser = asyncHandler(async (req, res) => {
     try {
         const { clean, errors, isValid } = validateRegUser(req.body);
 
-        if (isValid) {
-            logger.error(errors)
+        if (!isValid) {
+            return res.status(400).send(errors)
         }
 
         let user = User.findOne(clean.email);
@@ -20,7 +20,7 @@ const signUser = asyncHandler(async (req, res) => {
 
         user = new User(clean)
         await user.save();
-        res.status(201).redirect("/login")
+        res.status(201).send(user)
     } catch (err) {
         errorHandler(err, res)
     }
