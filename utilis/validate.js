@@ -30,7 +30,7 @@ const validateRegisterationInput = async (data) => {
         errors.password = "Password is too weak, it should contain a minimum of 6 characters, 1 uppercase, 1 lowercase, 1 number, and 1 symbol"
     }
 
-    if (!validator.isMobilePhone(clean.phone, { locale: "any" })) {
+    if (!validator.isMobilePhone(clean.phone, "en-NG")) {
         errors.phone = "Invalid Phone number";
     }
 
@@ -40,7 +40,6 @@ const validateRegisterationInput = async (data) => {
         isValid: Object.keys(errors).length === 0
     }
 }
-
 
 
 export default validateRegisterationInput;

@@ -12,5 +12,5 @@ import { indexPage } from "../controllers/pageControllers.js";
 
 router.get("/", indexPage);
 router.post("/sign", signUser);
-router.post("/sign", loginUser);
+// router.post("/sign", loginUser);
 export default router;
