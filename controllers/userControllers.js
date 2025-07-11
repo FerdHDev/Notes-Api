@@ -9,6 +9,7 @@ import logger from "../utilis/loggers.js";
 const signUser = asyncHandler(async (req, res) => {
     try {
         const { clean, errors, isValid } = await validateRegistrationInput(req.body);
+
         if (!isValid) {
             return res.status(400).send(errors)
         }
@@ -24,7 +25,6 @@ const signUser = asyncHandler(async (req, res) => {
         await user.save();
         res.status(201).send(user);
     } catch (err) {
-        logger.error(err)
         errorHandler(err, res)
     }
 })
@@ -32,16 +32,18 @@ const signUser = asyncHandler(async (req, res) => {
 const loginUser = asyncHandler(async (req, res) => {
     try {
         const { email, password } = req.body;
-        const cleanEmail = validateRegistrationInput(email);
+        const cleanEmail = validator.escape(validator.normalizeEmail(validator.trim(email)));
         const cleanPswd = validator.escape(validator.trim(password));
 
-        let user = User.findOne({ email: cleanEmail });
+        let user = await User.findOne({ email: cleanEmail });
 
-        if (user) {
-            return res.status(200).send("Invalid Credentials");
+        if (!user) {
+            return res.status(400).send("Invalid Credentials");
         }
 
-        const isMatch = await User.natchPassword(cleanPswd);
+        console.log(user)
+
+        const isMatch = await user.matchPassword(cleanPswd);
         if (!isMatch) {
             return res.status(400).send("Invalid Credentials");
         }
@@ -49,7 +51,7 @@ const loginUser = asyncHandler(async (req, res) => {
         const token = generateToken({ userId: user._id });
         res.status(200).json({ jwToken: token, response: "User logged in successfully" });
     } catch (err) {
-        logger.error(err, { depth: null })
+        console.log(err, { depth: null })
         errorHandler(err, res);
     }
 })

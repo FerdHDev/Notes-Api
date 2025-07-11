@@ -209,3 +209,151 @@
 [2025-07-11T07:27:20.251Z] [32minfo[39m: MongoDB connected
 [2025-07-11T07:28:31.313Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-11T07:28:37.284Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:36:46.044Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:37:03.746Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:38:25.992Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:38:34.017Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:39:59.199Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:40:03.651Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:42:17.577Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:42:21.207Z] [31merror[39m: CastError: Cast to string failed for value "Promise {
+  {
+    errors: {
+      password: 'Password is too short, it should contain a minimum of 6 characters',
+      phone: 'Invalid Phone number'
+    },
+    clean: {
+      fullname: '',
+      email: '@',
+      phone: '',
+      age: '',
+      gender: '',
+      password: ''
+    },
+    isValid: false
+  }
+}" (type Promise) at path "email" for model "User"
+[2025-07-11T07:42:23.610Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:43:13.968Z] [31merror[39m: CastError: Cast to string failed for value "Promise {
+  {
+    errors: {
+      password: 'Password is too short, it should contain a minimum of 6 characters',
+      phone: 'Invalid Phone number'
+    },
+    clean: {
+      fullname: '',
+      email: '@',
+      phone: '',
+      age: '',
+      gender: '',
+      password: ''
+    },
+    isValid: false
+  }
+}" (type Promise) at path "email" for model "User"
+[2025-07-11T07:43:56.263Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:44:01.330Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:44:05.678Z] [31merror[39m: CastError: Cast to string failed for value "Promise {
+  {
+    errors: {
+      password: 'Password is too short, it should contain a minimum of 6 characters',
+      phone: 'Invalid Phone number'
+    },
+    clean: {
+      fullname: '',
+      email: '@',
+      phone: '',
+      age: '',
+      gender: '',
+      password: ''
+    },
+    isValid: false
+  }
+}" (type Promise) at path "email" for model "User"
+[2025-07-11T07:48:58.544Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:49:07.756Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:49:51.259Z] [31merror[39m: TypeError: User.natchPassword is not a function
+[2025-07-11T07:50:24.045Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:50:35.014Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:50:45.075Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:50:47.400Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:50:48.724Z] [31merror[39m: TypeError: User.matchPassword is not a function
+[2025-07-11T07:56:02.829Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T07:56:10.608Z] [32minfo[39m: MongoDB connected
+[2025-07-11T07:56:19.922Z] [31merror[39m: TypeError: user.matchPassword is not a function
+[2025-07-11T08:20:39.099Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T08:20:45.705Z] [32minfo[39m: MongoDB connected
+[2025-07-11T08:20:52.119Z] [31merror[39m: TypeError: user.matchPassword is not a function
+[2025-07-11T08:26:48.225Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T08:26:55.088Z] [32minfo[39m: MongoDB connected
+[2025-07-11T08:29:15.108Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T08:29:26.516Z] [32minfo[39m: MongoDB connected
+[2025-07-11T08:30:22.752Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T08:30:28.140Z] [32minfo[39m: MongoDB connected
+[2025-07-11T08:30:34.265Z] [31merror[39m: password error
+[2025-07-11T08:32:47.588Z] [31merror[39m: password is not defined
+[2025-07-11T09:15:10.932Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:15:16.846Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:15:29.911Z] [31merror[39m: password is not defined
+[2025-07-11T09:16:34.198Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:16:38.263Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:18:13.512Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:18:20.785Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:18:31.041Z] [32minfo[39m: Password:
+[2025-07-11T09:18:31.042Z] [32minfo[39m: Password:
+[2025-07-11T09:18:31.351Z] [31merror[39m: password is not defined
+[2025-07-11T09:19:38.990Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:19:46.630Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:19:52.885Z] [32minfo[39m: Password:
+[2025-07-11T09:19:52.887Z] [32minfo[39m: Password:
+[2025-07-11T09:19:52.888Z] [32minfo[39m: Password:
+[2025-07-11T09:19:53.165Z] [31merror[39m: password is not defined
+[2025-07-11T09:21:01.211Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:21:16.805Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:21:42.475Z] [32minfo[39m: Password:
+[2025-07-11T09:21:42.476Z] [32minfo[39m: Password:
+[2025-07-11T09:21:42.477Z] [32minfo[39m: Password:
+[2025-07-11T09:21:42.763Z] [31merror[39m: password is not defined
+[2025-07-11T09:23:48.007Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:24:04.788Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:25:05.134Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:25:16.770Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:25:34.614Z] [32minfo[39m: req.body Password:
+[2025-07-11T09:25:34.616Z] [32minfo[39m: clean Password:
+[2025-07-11T09:25:34.617Z] [32minfo[39m: req.body:
+[2025-07-11T09:25:34.881Z] [31merror[39m: password is not defined
+[2025-07-11T09:27:27.096Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:27:41.151Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:27:55.929Z] [31merror[39m: password is not defined
+[2025-07-11T09:28:56.011Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:29:04.883Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:33:05.144Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:33:15.948Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:33:18.424Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:37:17.102Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:37:27.892Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:38:06.360Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:38:08.846Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:39:14.998Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:39:21.278Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:41:08.575Z] [31merror[39m: TypeError: user.matchPassword is not a function
+[2025-07-11T09:43:39.979Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:43:42.402Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:44:32.938Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:44:41.107Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:44:43.040Z] [31merror[39m: TypeError: user.matchPassword is not a function
+[2025-07-11T09:45:34.266Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:45:36.625Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:46:02.724Z] [31merror[39m: TypeError: user.matchPassword is not a function
+[2025-07-11T09:58:52.465Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:58:58.968Z] [32minfo[39m: MongoDB connected
+[2025-07-11T09:59:31.516Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T09:59:33.779Z] [32minfo[39m: MongoDB connected
+[2025-07-11T10:01:15.754Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T10:01:23.397Z] [32minfo[39m: MongoDB connected
+[2025-07-11T10:01:50.183Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T10:01:52.561Z] [32minfo[39m: MongoDB connected
+[2025-07-11T10:06:14.404Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T10:06:17.255Z] [32minfo[39m: MongoDB connected
+[2025-07-11T10:12:45.915Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-11T10:12:52.118Z] [32minfo[39m: MongoDB connected
