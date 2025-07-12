@@ -2,7 +2,8 @@ import express from 'express';
 const router = express.Router();
 
 /* Note Routes */
-import { getHome } from "../controllers/noteControllers.js";
+import { createNote } from "../controllers/noteControllers.js";
+router.post("/notes/create", createNote);
 
 /* User Routes */
 import { signUser, loginUser } from "../controllers/userControllers.js";

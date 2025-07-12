@@ -4,6 +4,12 @@ import helmet from 'helmet';
 import routes from './routes/router.js';
 import logger from './utilis/loggers.js';
 import connectDB from "./config/connectDB.js";
+import initTags from "./config/initTags.js";
+
+(async () => {
+    await connectDB();
+    await initTags()
+})()
 
 dotenv.config();
 const app = express();
@@ -12,7 +18,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 app.use(helmet());
-connectDB();
 
 const Port = process.env.PORT || 3030;
 app.listen(Port, () => logger.info(`[server] is live on: http://localhost:${Port}`))

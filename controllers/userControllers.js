@@ -49,7 +49,7 @@ const loginUser = asyncHandler(async (req, res) => {
         }
 
         const token = generateToken({ userId: user._id });
-        res.status(200).json({ jwToken: token, response: "User logged in successfully" });
+        res.status(200).json({ token, response: "User logged in successfully" });
     } catch (err) {
         console.log(err, { depth: null })
         errorHandler(err, res);
