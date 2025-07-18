@@ -1,45 +1,96 @@
-import validator from "validator";
+import expressValidator, { body, validationResult } from "express-validator";
+import logger from "./loggers.js";
 
-const validateRegisterationInput = async (data) => {
-    const errors = {};
-    const clean = {};
+const fullnameValidation = [
+    body('fullname')
+        .trim()
+        .notEmpty().withMessage("Full Name is required.")
+        .isLength({ min: 2, max: 50 }).withMessage("Full Name must be between 2 and 50 characters")
+        .isString().withMessage("Full Name must contain only string")
+        .escape()
+];
 
-    const rawFullname = data.fullname || "";
-    const rawEmail = data.email || "";
-    const rawPhone = data.phone || "";
-    const rawAge = data.age || "";
-    const rawGender = data.gender || "";
-    const rawPassword = data.password || "";
+const usernameValidation = [
+    body('username')
+        .trim()
+        .notEmpty().withMessage("Username is required")
+        .isLength({ min: 2, max: 50 }).withMessage("Username must be between 2 and 50 characters")
+        .isAlphanumeric().withMessage("Username must contain string and numbers")
+        .escape()
+];
 
-    clean.fullname = validator.escape(validator.trim(rawFullname));
-    clean.email = validator.normalizeEmail(validator.trim(rawEmail));
-    clean.phone = validator.escape(validator.trim(rawPhone));
-    clean.age = validator.escape(validator.trim(rawAge));
-    clean.gender = validator.escape(validator.trim(rawGender));
-    clean.password = validator.escape(validator.trim(rawPassword));
+const emailValidation = [
+    body('email')
+        .trim()
+        .notEmpty().withMessage("Email is required")
+        .isEmail().withMessage("Invalid email address")
+        .normalizeEmail()
+        .escape()
+];
 
-    if (!validator.isLength(clean.password, { min: 6, max: 30 })) {
-        errors.password = "Password is too short, it should contain a minimum of 6 characters";
-    } else if (!validator.isStrongPassword(clean.password, {
-        minLength: 6,
-        minLowercase: 1,
-        minUppercase: 1,
-        minNumbers: 1,
-        minSymbols: 1
-    })) {
-        errors.password = "Password is too weak, it should contain a minimum of 6 characters, 1 uppercase, 1 lowercase, 1 number, and 1 symbol"
+const phoneValidation = [
+    body('phone')
+        .trim()
+        .notEmpty().withMessage("Phone number is required")
+        .isInt().withMessage("Phone number must contain only numbers")
+        .isMobilePhone({ locale: 'en-NG' }).withMessage("Phone number is Invalid")
+        .escape()
+];
+
+const ageValidation = [
+    body('age')
+        .trim()
+        .notEmpty().withMessage("Age is required")
+        .isInt().withMessage("Age must contain only numbers")
+        .isLength({ min: 18, max: 120 }).withMessage("Age must be between 18 and 120")
+        .escape()
+]
+
+const genderValidation = [
+    body('gender')
+        .trim()
+        .notEmpty().withMessage("Gender is required")
+        .isString().withMessage("Gender must contain only alphabets")
+        .escape()
+];
+
+const passwordValidation = [
+    body('password')
+        .trim()
+        .notEmpty().withMessage("Password is required")
+        .isStrongPassword({ minLength: 10, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, pointsForContainingLower: 10, pointsForContainingNumber: 0.5, pointsForContainingSymbol: 0.5, pointsForContainingUpper: 10, pointsPerRepeat: 5, pointsPerUnique: 10 }).withMessage("Password is weak")
+        .isAlphanumeric().withMessage("Password must contain alphabets and numbers")
+];
+
+const allValidations = [
+    fullnameValidation,
+    emailValidation,
+    usernameValidation,
+    phoneValidation,
+    ageValidation,
+    genderValidation,
+    passwordValidation
+].flat();
+
+const validateResult = async (req) => {
+    await Promise.all(allValidations.map(chain => chain.run(req)))
+    const errors = validationResult(req)
+
+    if (!errors.isEmpty()) {
+        return { errors: errors.array(), isValid: false }
     }
 
-    if (!validator.isMobilePhone(clean.phone, "en-NG")) {
-        errors.phone = "Invalid Phone number";
-    }
-
-    return {
-        errors,
-        clean,
-        isValid: Object.keys(errors).length === 0
-    }
+    return { errors: [], isValid: true, sanitizedData: req.body }
 }
 
+exports = {
+    validateFields: allValidations,
+    fullnameValidation,
+    emailValidation,
+    usernameValidation,
+    phoneValidation,
+    genderValidation,
+    passwordValidation,
 
-export default validateRegisterationInput;
+    validateResult
+}

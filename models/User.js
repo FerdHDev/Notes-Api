@@ -5,25 +5,19 @@ const userSchema = new Schema({
     fullname: {
         type: String,
         required: true,
-        trim: true,
-        minlength: 3,
-        maxlength: 30,
+    },
+    username: {
+        type: String,
+        unique: true,
+        required: true
     },
     email: {
         type: String,
         required: true,
         unique: true,
-        trim: true,
-        match: /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/,
     },
     phone: {
-        type: String,
-        validate: {
-            validator: function(v) {
-                return /^(\+234|0)[789][01]\d{8}$/.test(v);
-            },
-            message: props => `"${props.value}" is not a valid Nigerian phone number.`
-        }
+        type: Number,
     },
     age: {
         type: Number,

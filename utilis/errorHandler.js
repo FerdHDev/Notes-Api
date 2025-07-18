@@ -13,7 +13,6 @@ const extractValidationErrors = (err) => {
 
 const errorHandler = (err, res) => {
     if (err.name === "ValidationError") {
-        //!console.dir(err, { depth: null })
 
         const details = extractValidationErrors(err);
         return res.status(500).json({ error: "Validation Error", details })

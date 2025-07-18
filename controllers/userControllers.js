@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import validator from "validator";
+import validator from "express-validator";
 import errorHandler from "../utilis/errorHandler.js";
 import User from "../models/User.js";
 import generateToken from "../utilis/generateToken.js";
@@ -8,22 +8,19 @@ import logger from "../utilis/loggers.js";
 
 const signUser = asyncHandler(async (req, res) => {
     try {
-        const { clean, errors, isValid } = await validateRegistrationInput(req.body);
+        const { errors } = await validateRegistrationInput(req);
 
-        if (!isValid) {
-            return res.status(400).send(errors)
-        }
-
-        const cleanEmail = clean.email;
-        let user = await User.findOne({ email: cleanEmail });
-
-        if (user) {
-            return res.status(400).send("This email exists in the database")
-        }
-
-        user = new User(clean);
-        await user.save();
-        res.status(201).send(user);
+        /*
+         const cleanEmail = clean.email;
+         let user = await User.findOne({ email: cleanEmail });
+ 
+         if (user) {
+             return res.status(400).send("This email exists in the database")
+         }
+ 
+         user = new User(clean);
+         await user.save();
+         res.status(201).send(user); */
     } catch (err) {
         errorHandler(err, res)
     }

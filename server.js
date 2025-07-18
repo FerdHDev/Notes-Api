@@ -4,11 +4,10 @@ import helmet from 'helmet';
 import routes from './routes/router.js';
 import logger from './utilis/loggers.js';
 import connectDB from "./config/connectDB.js";
-import initTags from "./config/initTags.js";
+// import initTags from "./config/initTags.js";
 
 (async () => {
     await connectDB();
-    await initTags()
 })()
 
 dotenv.config();

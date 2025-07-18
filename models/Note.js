@@ -8,19 +8,14 @@ const noteSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    content: {
-        type: String,
-        required: true,
-    },
+    content: String,
     tags: {
         type: String,
-        enum: ["tech", "finance"],
+        enum: ["work", "personal", "school", "music", "inspiration"],
         required: true
     },
-    referencUrl: {
-        type: String,
-        required: true
-    },
+    // suggestedTags: [String],
+    referencUrl: String,
     isPrivate: {
         type: Boolean,
         enum: ["true", "false"],
