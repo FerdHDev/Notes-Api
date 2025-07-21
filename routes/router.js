@@ -1,4 +1,5 @@
 import express from 'express';
+import { validateFields } from "../utilis/validate.js";
 const router = express.Router();
 
 /* Note Routes */
@@ -12,6 +13,6 @@ import { signUser, loginUser } from "../controllers/userControllers.js";
 import { indexPage } from "../controllers/pageControllers.js";
 
 router.get("/", indexPage);
-router.post("/sign", signUser);
+router.post("/sign", validateFields, signUser);
 router.post("/signin", loginUser);
 export default router;

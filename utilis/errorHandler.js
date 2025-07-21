@@ -27,7 +27,11 @@ const errorHandler = (err, res) => {
         return res.status(500).json({ error: "Unexpected error:", message: err.message })
     }
 
-    res.status(500).json({ error: "something went wrong" })
+    if (err === "ECONNREFUSED") {
+        return res.status(500).json({ error: "Internet connectivity or port issues", message: err })
+    }
+
+    return res.status(500).json({ error: "something went wrong" })
 }
 
 export default errorHandler;

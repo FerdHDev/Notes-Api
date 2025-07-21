@@ -415,3 +415,89 @@
 [2025-07-17T18:04:18.611Z] [32minfo[39m: MongoDB connected
 [2025-07-17T18:05:29.843Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-17T18:05:37.130Z] [32minfo[39m: MongoDB connected
+[2025-07-20T15:35:18.360Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-20T15:35:25.874Z] [32minfo[39m: MongoDB connected
+[2025-07-20T15:36:39.818Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-20T15:36:45.899Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:31:58.881Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:32:31.016Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:33:34.494Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:35:14.739Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:40:35.780Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:40:48.793Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:42:42.070Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:42:57.594Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:43:11.903Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:43:58.119Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:44:14.775Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:44:51.484Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:45:03.446Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:46:33.138Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:47:16.269Z] [31merror[39m: Mongoose connection error Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-07-21T18:54:29.782Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:54:34.760Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:57:04.792Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:57:15.895Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:57:37.327Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:57:49.163Z] [32minfo[39m: MongoDB connected
+[2025-07-21T18:59:10.769Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T18:59:20.694Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:03:51.461Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:04:01.011Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:08:21.397Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:08:28.195Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:09:50.856Z] [32minfo[39m: undefined
+[2025-07-21T19:10:40.586Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:10:49.424Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:12:30.955Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:12:50.543Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:15:11.490Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:15:25.568Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:18:28.831Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:18:46.465Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:22:36.401Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:22:48.725Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:28:07.409Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:28:12.518Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:28:18.774Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:28:24.278Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:30:44.416Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:30:54.742Z] [32minfo[39m: MongoDB connected
+[2025-07-21T19:31:39.974Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T19:31:46.604Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:00:39.330Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:01:14.727Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:01:26.915Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:03:29.557Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:03:40.662Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:04:13.104Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:04:19.192Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:06:53.029Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:06:56.105Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:07:01.428Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:07:13.545Z] [32minfo[39m: [object Object]
+[2025-07-21T21:07:24.941Z] [32minfo[39m: [object Object]
+[2025-07-21T21:07:47.847Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:07:55.846Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:08:42.184Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:08:43.332Z] [32minfo[39m: [object Object]
+[2025-07-21T21:08:48.641Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:08:51.435Z] [31merror[39m: Send Mail Error: connect ECONNREFUSED 127.0.0.1:587
+[2025-07-21T21:09:12.311Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:09:12.476Z] [32minfo[39m: [object Object]
+[2025-07-21T21:09:22.574Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:09:29.984Z] [32minfo[39m: [object Object]
+[2025-07-21T21:09:32.819Z] [31merror[39m: Send Mail Error: connect ECONNREFUSED 127.0.0.1:587
+[2025-07-21T21:10:58.321Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:11:06.216Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:11:14.459Z] [32minfo[39m: [object Object]
+[2025-07-21T21:11:16.463Z] [31merror[39m: Send Mail Error: connect ECONNREFUSED 127.0.0.1:587
+[2025-07-21T21:14:43.036Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:14:55.664Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:16:23.031Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:16:36.789Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:22:14.403Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:22:33.844Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:23:10.738Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-21T21:23:22.224Z] [32minfo[39m: MongoDB connected
+[2025-07-21T21:23:38.070Z] [32minfo[39m: [object Object]

@@ -3,24 +3,35 @@ import validator from "express-validator";
 import errorHandler from "../utilis/errorHandler.js";
 import User from "../models/User.js";
 import generateToken from "../utilis/generateToken.js";
-import validateRegistrationInput from "../utilis/validate.js";
+import { validateRequest } from "../utilis/validate.js";
 import logger from "../utilis/loggers.js";
+import { sendSecurityNotice } from "../config/mailer.js";
+
 
 const signUser = asyncHandler(async (req, res) => {
     try {
-        const { errors } = await validateRegistrationInput(req);
+        let clean, user;
+        const validationResult = await validateRequest(req);
 
-        /*
-         const cleanEmail = clean.email;
-         let user = await User.findOne({ email: cleanEmail });
- 
-         if (user) {
-             return res.status(400).send("This email exists in the database")
-         }
- 
-         user = new User(clean);
-         await user.save();
-         res.status(201).send(user); */
+        if (!validationResult.isValid) {
+            const errors = validationResult.errors.map(error => error.msg)
+            return res.status(400).send(errors);
+        }
+
+        clean = validationResult.sanitizedData;
+        logger.info(clean, clean.age)
+        if (clean.age < 18) return res.status(401).send("Age must in between 18 and 120 years");
+
+        user = await User.findOne({ email: clean.email });
+
+        if (user) {
+            sendSecurityNotice(user);
+            return res.status(400).send("This email has already in use");
+        }
+
+        user = new User(clean);
+        await user.save();
+        res.status(201).send(user);
     } catch (err) {
         errorHandler(err, res)
     }

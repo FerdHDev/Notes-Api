@@ -1,5 +1,4 @@
-import expressValidator, { body, validationResult } from "express-validator";
-import logger from "./loggers.js";
+import { body, validationResult } from "express-validator";
 
 const fullnameValidation = [
     body('fullname')
@@ -32,8 +31,7 @@ const phoneValidation = [
     body('phone')
         .trim()
         .notEmpty().withMessage("Phone number is required")
-        .isInt().withMessage("Phone number must contain only numbers")
-        .isMobilePhone({ locale: 'en-NG' }).withMessage("Phone number is Invalid")
+        .isMobilePhone(['en-NG']).withMessage("Provide a valid nigerian number.")
         .escape()
 ];
 
@@ -42,7 +40,6 @@ const ageValidation = [
         .trim()
         .notEmpty().withMessage("Age is required")
         .isInt().withMessage("Age must contain only numbers")
-        .isLength({ min: 18, max: 120 }).withMessage("Age must be between 18 and 120")
         .escape()
 ]
 
@@ -58,8 +55,7 @@ const passwordValidation = [
     body('password')
         .trim()
         .notEmpty().withMessage("Password is required")
-        .isStrongPassword({ minLength: 10, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, pointsForContainingLower: 10, pointsForContainingNumber: 0.5, pointsForContainingSymbol: 0.5, pointsForContainingUpper: 10, pointsPerRepeat: 5, pointsPerUnique: 10 }).withMessage("Password is weak")
-        .isAlphanumeric().withMessage("Password must contain alphabets and numbers")
+        .isStrongPassword({ minLength: 10, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, pointsForContainingLower: 10, pointsForContainingNumber: 0.5, pointsForContainingSymbol: 0.5, pointsForContainingUpper: 10, pointsPerRepeat: 5, pointsPerUnique: 10 }).withMessage("Password is too weak, it must contain a minimum of 10 characters, 1 lowercase, 1 uppercase, 1 number, and 1 symbol")
 ];
 
 const allValidations = [
@@ -72,25 +68,24 @@ const allValidations = [
     passwordValidation
 ].flat();
 
-const validateResult = async (req) => {
-    await Promise.all(allValidations.map(chain => chain.run(req)))
-    const errors = validationResult(req)
+export const validateRequest = async (req) => {
+    await Promise.all(allValidations.map(chain => chain.run(req)));
+    const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-        return { errors: errors.array(), isValid: false }
+        return { errors: errors.array(), isValid: false };
     }
 
     return { errors: [], isValid: true, sanitizedData: req.body }
 }
 
-exports = {
-    validateFields: allValidations,
+export const validateFields = allValidations;
+
+export default {
     fullnameValidation,
     emailValidation,
     usernameValidation,
     phoneValidation,
     genderValidation,
     passwordValidation,
-
-    validateResult
-}
+} 
