@@ -13,7 +13,6 @@ const extractValidationErrors = (err) => {
 
 const errorHandler = (err, res) => {
     if (err.name === "ValidationError") {
-
         const details = extractValidationErrors(err);
         return res.status(500).json({ error: "Validation Error", details })
     }
@@ -24,11 +23,7 @@ const errorHandler = (err, res) => {
 
 
     if (err instanceof Error) {
-        return res.status(500).json({ error: "Unexpected error:", message: err.message })
-    }
-
-    if (err === "ECONNREFUSED") {
-        return res.status(500).json({ error: "Internet connectivity or port issues", message: err })
+        return logger.error("error message:", err)
     }
 
     return res.status(500).json({ error: "something went wrong" })

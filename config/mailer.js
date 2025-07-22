@@ -3,10 +3,10 @@ dotenv.config()
 import nodemailer from "nodemailer";
 import logger from "../utilis/loggers.js"
 
+logger.info(process.env.USER);
+logger.info(process.env.PASS);
 const mailer = await nodemailer.createTransport({
-    servic: "gmail",
-    host: "localhost",
-    port: process.env.PORT || 3030,
+    service: "gmail",
     auth: {
         user: process.env.USER,
         pass: process.env.PASS
@@ -35,6 +35,8 @@ export const sendSecurityNotice = async (cleanUser) => {
             subject: "🚨 Alert: A Sign-Up Attempt Was Made Using Your Email",
             html: emailContent
         })
+
+        logger.info("Email sent")
     } catch (err) {
         logger.error("Send Mail Error:", err, { depth: null })
     }

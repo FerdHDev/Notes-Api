@@ -19,7 +19,7 @@ const signUser = asyncHandler(async (req, res) => {
         }
 
         clean = validationResult.sanitizedData;
-        logger.info(clean, clean.age)
+
         if (clean.age < 18) return res.status(401).send("Age must in between 18 and 120 years");
 
         user = await User.findOne({ email: clean.email });
@@ -33,7 +33,8 @@ const signUser = asyncHandler(async (req, res) => {
         await user.save();
         res.status(201).send(user);
     } catch (err) {
-        errorHandler(err, res)
+        // errorHandler(err, res)
+        logger.error(err);
     }
 })
 

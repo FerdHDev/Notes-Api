@@ -501,3 +501,62 @@
 [2025-07-21T21:23:10.738Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-21T21:23:22.224Z] [32minfo[39m: MongoDB connected
 [2025-07-21T21:23:38.070Z] [32minfo[39m: [object Object]
+[2025-07-22T07:12:45.726Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T07:12:50.190Z] [32minfo[39m: MongoDB connected
+[2025-07-22T07:13:02.478Z] [32minfo[39m: [object Object]
+[2025-07-22T07:13:04.887Z] [31merror[39m: Send Mail Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3b61ca253e1sm12688733f8f.5 - gsmtp
+[2025-07-22T07:14:11.274Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T07:14:13.996Z] [32minfo[39m: MongoDB connected
+[2025-07-22T07:16:33.279Z] [32minfo[39m: ferdhwork1475@gmail.com
+[2025-07-22T07:16:33.434Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T07:16:37.598Z] [32minfo[39m: MongoDB connected
+[2025-07-22T07:16:38.691Z] [32minfo[39m: ferdhwork1475@gmail.com
+[2025-07-22T07:16:38.842Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T07:16:43.120Z] [32minfo[39m: MongoDB connected
+[2025-07-22T07:17:53.164Z] [32minfo[39m: ferdhwork1475@gmail.com
+[2025-07-22T07:17:53.175Z] [32minfo[39m: lftm esjn hnxf zxpp
+[2025-07-22T07:17:53.315Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T07:18:03.481Z] [32minfo[39m: MongoDB connected
+[2025-07-22T09:38:01.231Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T09:38:01.244Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T09:38:01.384Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T09:38:05.733Z] [32minfo[39m: MongoDB connected
+[2025-07-22T12:41:04.265Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T12:41:04.275Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T12:41:04.416Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T12:41:08.351Z] [32minfo[39m: MongoDB connected
+[2025-07-22T13:02:26.872Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T13:02:26.883Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T13:02:27.020Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T13:02:29.780Z] [32minfo[39m: MongoDB connected
+[2025-07-22T13:03:19.074Z] [32minfo[39m: [object Object]
+[2025-07-22T13:18:50.676Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T13:18:50.688Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T13:18:50.828Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T13:19:16.495Z] [32minfo[39m: [object Object]
+[2025-07-22T13:19:19.935Z] [32minfo[39m: MongoDB connected
+[2025-07-22T13:19:24.726Z] [32minfo[39m: Email sent
+[2025-07-22T14:18:05.820Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T14:18:05.830Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T14:18:05.967Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T14:18:13.550Z] [32minfo[39m: MongoDB connected
+[2025-07-22T14:18:30.338Z] [32minfo[39m: [object Object]
+[2025-07-22T14:18:33.443Z] [32minfo[39m: Email sent
+[2025-07-22T14:20:58.559Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T14:20:58.584Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T14:20:58.721Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T14:24:01.831Z] [31merror[39m: Mongoose connection error Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-07-22T14:24:20.518Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T14:24:20.531Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T14:24:20.720Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T14:24:50.688Z] [32minfo[39m: MongoDB connected
+[2025-07-22T14:26:02.252Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T14:26:02.263Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T14:26:02.390Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T14:26:16.363Z] [32minfo[39m: MongoDB connected
+[2025-07-22T14:28:30.406Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T14:28:30.417Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T14:28:30.549Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T14:28:43.537Z] [32minfo[39m: MongoDB connected
+[2025-07-22T14:28:46.429Z] [32minfo[39m: Email sent
