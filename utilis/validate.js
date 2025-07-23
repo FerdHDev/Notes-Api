@@ -58,6 +58,30 @@ const passwordValidation = [
         .isStrongPassword({ minLength: 10, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, pointsForContainingLower: 10, pointsForContainingNumber: 0.5, pointsForContainingSymbol: 0.5, pointsForContainingUpper: 10, pointsPerRepeat: 5, pointsPerUnique: 10 }).withMessage("Password is too weak, it must contain a minimum of 10 characters, 1 lowercase, 1 uppercase, 1 number, and 1 symbol")
 ];
 
+const titleValidation = [
+    body('title')
+        .trim()
+        .notEmpty().withMessage("Note must have a title")
+        .isString().withMessage("Note must contain only string")
+        .escape()
+];
+
+const previewValidation = [
+    body('preview')
+        .trim()
+        .notEmpty().withMessage("Preview is required")
+        .isString().withMessage("Preview must be contain only string")
+        .escape()
+];
+
+const contentValidation = [
+    body("content")
+        .trim()
+        .isString().withMessage("Content must contain string")
+        .escape()
+];
+
+
 const allValidations = [
     fullnameValidation,
     emailValidation,
@@ -71,6 +95,12 @@ const allValidations = [
 const allLoginValidations = [
     emailValidation,
     passwordValidation
+].flat();
+
+const allNoteValidations = [
+    titleValidation,
+    previewValidation,
+    contentValidation
 ].flat();
 
 export const validateRequest = async (req) => {
