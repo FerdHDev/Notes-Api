@@ -23,7 +23,6 @@ const signUser = asyncHandler(async (req, res) => {
         if (clean.age < 18) return res.status(401).send("Age must in between 18 and 120 years");
 
         user = await User.findOne({ email: clean.email });
-
         if (user) {
             sendSecurityNotice(user);
             return res.status(400).send("This email has already in use");
@@ -33,8 +32,8 @@ const signUser = asyncHandler(async (req, res) => {
         await user.save();
         res.status(201).send(user);
     } catch (err) {
-        // errorHandler(err, res)
-        logger.error(err);
+        const field = Object.keys(err.keyValue);
+        const value = err.keyValue.username; res.status(403).send(`${field} field is unique - the value ${value} is already in use.`);
     }
 })
 

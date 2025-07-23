@@ -560,3 +560,135 @@
 [2025-07-22T14:28:30.549Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-22T14:28:43.537Z] [32minfo[39m: MongoDB connected
 [2025-07-22T14:28:46.429Z] [32minfo[39m: Email sent
+[2025-07-22T16:23:28.645Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T16:23:28.655Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T16:23:28.792Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T16:23:32.343Z] [32minfo[39m: MongoDB connected
+[2025-07-22T16:23:40.354Z] [32minfo[39m: Email sent
+[2025-07-22T16:25:48.698Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T16:25:48.708Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T16:25:48.861Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T16:25:51.215Z] [32minfo[39m: MongoDB connected
+[2025-07-22T16:26:35.816Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T16:26:35.827Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T16:26:35.955Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T16:26:39.183Z] [32minfo[39m: MongoDB connected
+[2025-07-22T16:27:14.815Z] [32minfo[39m: Email sent
+[2025-07-22T17:06:25.651Z] [31merror[39m: Socket 'secureConnect' timed out after 30643ms (connectTimeoutMS: 30000)
+[2025-07-22T17:09:14.155Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T17:09:14.176Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T17:09:14.300Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:10:45.458Z] [31merror[39m: error message: querySrv ETIMEOUT _mongodb._tcp.prod-cluster.oz4gedb.mongodb.net
+[2025-07-22T17:12:23.251Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T17:12:23.263Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T17:12:23.392Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:12:45.464Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T17:12:45.474Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T17:12:45.599Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:12:59.778Z] [31merror[39m: Operation `users.findOne()` buffering timed out after 10000ms
+[2025-07-22T17:13:41.546Z] [32minfo[39m: ferdinand1475joel@gmail.com
+[2025-07-22T17:13:41.558Z] [32minfo[39m: nurg hkxg ptfc zfic
+[2025-07-22T17:13:41.694Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:15:25.850Z] [31merror[39m: error message: querySrv ETIMEOUT _mongodb._tcp.prod-cluster.oz4gedb.mongodb.net
+[2025-07-22T17:15:48.471Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:16:44.103Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:18:19.014Z] [31merror[39m: connection <monitor> to 65.62.39.68:27017 timed out
+[2025-07-22T17:20:31.798Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:28:27.581Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:32:31.922Z] [31merror[39m: Mongoose connection error getaddrinfo ENOTFOUND ac-dj7cicj-shard-00-02.oz4gedb.mongodb.net
+[2025-07-22T17:34:09.945Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:34:42.009Z] [31merror[39m: error message: querySrv ECONNREFUSED _mongodb._tcp.prod-cluster.oz4gedb.mongodb.net
+[2025-07-22T17:35:00.692Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:35:03.695Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:36:00.028Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:36:01.959Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:36:20.603Z] [31merror[39m: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:38:20.234Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:38:22.690Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:39:15.241Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:39:17.236Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:40:06.218Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:40:08.222Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:40:37.352Z] [31merror[39m: MongoServerError: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:47:12.060Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:47:14.015Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:51:38.927Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:51:43.195Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:52:01.740Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:52:03.866Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:52:09.931Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:53:33.882Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:53:38.332Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:53:45.043Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:54:48.774Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:54:52.157Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:55:01.930Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:55:03.981Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:55:08.514Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:55:35.475Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:55:37.415Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:55:38.941Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:56:26.670Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:56:30.355Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:56:34.402Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T17:57:41.798Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:57:45.512Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:58:53.922Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T17:58:56.636Z] [32minfo[39m: MongoDB connected
+[2025-07-22T17:59:07.634Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-22T18:01:17.801Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T18:01:20.494Z] [32minfo[39m: MongoDB connected
+[2025-07-22T18:03:19.059Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-22T18:03:21.205Z] [32minfo[39m: MongoDB connected
+[2025-07-22T18:04:14.994Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:04:37.543Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:04:40.258Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:04:44.186Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-23T16:06:15.740Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:06:21.576Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:07:31.929Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:07:36.756Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:08:51.807Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:08:57.339Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:10:11.602Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:10:16.398Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:11:07.387Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:11:09.261Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:11:55.515Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:11:57.395Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:12:45.191Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:12:48.300Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:15:11.372Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:15:13.598Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:15:46.982Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:15:48.875Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:16:23.204Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:16:25.934Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:19:08.188Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:19:10.139Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:20:19.650Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:20:26.437Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:25:14.241Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:25:17.127Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:26:23.057Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:26:25.745Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:27:32.624Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:27:36.853Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:27:47.966Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:27:49.834Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:28:09.614Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:28:11.626Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:28:33.976Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:28:37.314Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:28:44.982Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-23T16:30:09.939Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:30:12.341Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:31:23.293Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:31:25.660Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:32:28.159Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:32:32.007Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:33:17.536Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:33:19.376Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:33:21.759Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
+[2025-07-23T16:36:03.217Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:36:06.130Z] [32minfo[39m: MongoDB connected

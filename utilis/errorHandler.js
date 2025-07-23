@@ -1,6 +1,6 @@
 import logger from "./loggers.js";
 
-const extractValidationErrors = (err) => {
+/*const extractValidationErrors = (err) => {
     if (!err.errors) return [];
 
     return Object.values(err.errors).map(e => ({
@@ -9,7 +9,7 @@ const extractValidationErrors = (err) => {
         type: e.kind,
         value: e.value
     }));
-};
+};  */
 
 const errorHandler = (err, res) => {
     if (err.name === "ValidationError") {
@@ -22,8 +22,12 @@ const errorHandler = (err, res) => {
     }
 
 
-    if (err instanceof Error) {
-        return logger.error("error message:", err)
+    if (err instanceof Error) return logger.error("error message:", err);
+
+    if (err.code === 11000) {
+        const field = Object.keys(err.keyValue);
+        const value = err.keyValue.username;
+        res.status(403).send(`${field} field is unique - the value ${value} is already in use.`);
     }
 
     return res.status(500).json({ error: "something went wrong" })
