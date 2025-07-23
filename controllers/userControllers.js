@@ -1,9 +1,8 @@
 import asyncHandler from "express-async-handler";
 import validator from "express-validator";
-import errorHandler from "../utilis/errorHandler.js";
 import User from "../models/User.js";
 import generateToken from "../utilis/generateToken.js";
-import { validateRequest } from "../utilis/validate.js";
+import { validateRequest, validateLoginReq } from "../utilis/validate.js";
 import logger from "../utilis/loggers.js";
 import { sendSecurityNotice } from "../config/mailer.js";
 
@@ -39,28 +38,31 @@ const signUser = asyncHandler(async (req, res) => {
 
 const loginUser = asyncHandler(async (req, res) => {
     try {
-        const { email, password } = req.body;
-        const cleanEmail = validator.escape(validator.normalizeEmail(validator.trim(email)));
-        const cleanPswd = validator.escape(validator.trim(password));
+        let clean, user;
+        const validationResult = await validateLoginReq(req);
 
-        let user = await User.findOne({ email: cleanEmail });
+        if (!validationResult.isValid) {
+            const errors = validationResult.errors.map(error => error.msg)
+            return res.status(400).send(errors)
+        }
+
+        clean = validationResult.sanitizedData;
+
+        user = await User.findOne({ email: clean.email });
 
         if (!user) {
             return res.status(400).send("Invalid Credentials");
         }
 
-        console.log(user)
-
-        const isMatch = await user.matchPassword(cleanPswd);
+        const isMatch = await user.matchPassword(clean.password);
         if (!isMatch) {
             return res.status(400).send("Invalid Credentials");
         }
 
-        const token = generateToken({ userId: user._id });
-        res.status(200).json({ token, response: "User logged in successfully" });
+        generateToken({ userId: user._id });
+        res.status(200).send("User logged in successfully");
     } catch (err) {
         console.log(err, { depth: null })
-        errorHandler(err, res);
     }
 })
 

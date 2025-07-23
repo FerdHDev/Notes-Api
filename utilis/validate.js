@@ -68,6 +68,11 @@ const allValidations = [
     passwordValidation
 ].flat();
 
+const allLoginValidations = [
+    emailValidation,
+    passwordValidation
+].flat();
+
 export const validateRequest = async (req) => {
     await Promise.all(allValidations.map(chain => chain.run(req)));
     const errors = validationResult(req);
@@ -79,9 +84,23 @@ export const validateRequest = async (req) => {
     return { errors: [], isValid: true, sanitizedData: req.body }
 }
 
+
+export const validateLoginReq = async (req) => {
+    await Promise.all(allLoginValidations.map(chain => chain.run(req)))
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+        return { errors: errors.array(), isValid: false };
+    }
+
+    return { errors: [], isValid: true, sanitizedData: req.body }
+}
+
+
+export const validateLoginFields = allLoginValidations;
 export const validateFields = allValidations;
 
-export default {
+export {
     fullnameValidation,
     emailValidation,
     usernameValidation,

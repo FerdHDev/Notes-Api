@@ -1,5 +1,5 @@
 import express from 'express';
-import { validateFields } from "../utilis/validate.js";
+import { validateFields, validateLoginFields } from "../utilis/validate.js";
 const router = express.Router();
 
 /* Note Routes */
@@ -14,5 +14,5 @@ import { indexPage } from "../controllers/pageControllers.js";
 
 router.get("/", indexPage);
 router.post("/sign", validateFields, signUser);
-router.post("/signin", loginUser);
+router.post("/signin", validateLoginFields, loginUser);
 export default router;
