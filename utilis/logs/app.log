@@ -692,3 +692,10 @@
 [2025-07-23T16:33:21.759Z] [31merror[39m: error message: E11000 duplicate key error collection: notes-app.users index: username_1 dup key: { username: "FerdHDev" }
 [2025-07-23T16:36:03.217Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-23T16:36:06.130Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:39:22.575Z] [32minfo[39m: Email sent
+[2025-07-23T16:43:40.198Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:43:42.501Z] [32minfo[39m: MongoDB connected
+[2025-07-23T16:43:47.508Z] [32minfo[39m: ferdhwork1475@gmail.com
+[2025-07-23T16:43:50.169Z] [32minfo[39m: Email sent
+[2025-07-23T16:55:21.336Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-23T16:55:25.829Z] [32minfo[39m: MongoDB connected
