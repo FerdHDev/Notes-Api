@@ -81,6 +81,26 @@ const contentValidation = [
         .escape()
 ];
 
+const tagValidation = [
+    body("tags")
+        .trim()
+        .isString().withMessage("Tags must contain string")
+        .escape()
+];
+
+const refUrlValidation = [
+    body("referenceUrl")
+        .trim()
+        .isURL({ require_protocol: true, protocols: ['http', 'https'], allow_underscores: true, allow_fragments: true }).withMessage("Please provide a valid URL")
+];
+
+const isPrivateValidation = [
+    body("isPrivate")
+        .trim()
+        .notEmpty().withMessage("isPrivate cannot be empty")
+        .isString().withMessage("isPrivate must contain string")
+        .escape()
+];
 
 const allValidations = [
     fullnameValidation,
@@ -100,7 +120,10 @@ const allLoginValidations = [
 const allNoteValidations = [
     titleValidation,
     previewValidation,
-    contentValidation
+    contentValidation,
+    tagValidation,
+    refUrlValidation,
+    isPrivateValidation,
 ].flat();
 
 export const validateRequest = async (req) => {
@@ -126,7 +149,18 @@ export const validateLoginReq = async (req) => {
     return { errors: [], isValid: true, sanitizedData: req.body }
 }
 
+export const validateNoteReq = async (req) => {
+    await Promise.all(allNoteValidations.map(chain => chain.run(req)));
+    const errors = validationResult(req);
 
+    if (!errors.isEmpty()) {
+        return { errors: errors.array(), isValid: false };
+    }
+
+    return { errors: errors.array(), isValid: true, sanitizedData: req.body }
+}
+
+export const validateNoteFields = allNoteValidations;
 export const validateLoginFields = allLoginValidations;
 export const validateFields = allValidations;
 

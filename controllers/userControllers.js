@@ -59,6 +59,9 @@ const loginUser = asyncHandler(async (req, res) => {
             return res.status(400).send("Invalid Credentials");
         }
 
+        logger.info(req.ip)
+
+
         generateToken({ userId: user._id });
         res.status(200).send("User logged in successfully");
     } catch (err) {
