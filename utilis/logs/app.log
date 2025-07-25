@@ -799,3 +799,5 @@
 [2025-07-25T10:59:38.872Z] [32minfo[39m: MongoDB connected
 [2025-07-25T11:00:28.263Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-25T11:00:30.720Z] [32minfo[39m: MongoDB connected
+[2025-07-25T13:54:58.776Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-25T13:55:24.660Z] [31merror[39m: error message: Connection pool for ac-dj7cicj-shard-00-01.oz4gedb.mongodb.net:27017 was cleared because another operation failed with: "write ECONNABORTED"
