@@ -13,6 +13,10 @@ import connectDB from "./config/connectDB.js";
 dotenv.config();
 const app = express();
 
+app.use(express.static("public"));
+app.set("view engine", "pug");
+app.set("views", "./views");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);

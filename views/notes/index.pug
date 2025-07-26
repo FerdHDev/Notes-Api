@@ -1,0 +1,100 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title NoteMaster - Your Digital Notebook
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css')
+    link(rel='stylesheet' href='../css/styles.css')
+  body
+    // Navigation Section
+    nav.navbar
+      .nav-brand
+        a(href='#') NoteMaster
+      .nav-links
+        a(href='#features') Features
+        a(href='#how-it-works') How It Works
+        a(href='#pricing') Pricing
+        a(href='/login') Login
+      .nav-toggle
+        i.fas.fa-bars
+
+    // Hero Section
+    section#hero.hero
+      .hero-content
+        h1 Organize Your Thoughts with NoteMaster
+        p A simple, secure, and powerful note-taking app to capture your ideas anywhere.
+        a.hero-btn(href='#pricing') Get Started Free
+      .hero-image
+       // img(src='../images/digitalnote.jpg' alt='Digital notes on tablet') 
+
+    // Features Section
+    section#features.features
+      h2 Key Features
+      .features-grid
+        .feature-card
+          i.fas.fa-pen
+          h3 Simple Editor
+          p Write and format notes with an intuitive, distraction-free interface.
+        .feature-card
+          i.fas.fa-folder
+          h3 Organize Easily
+          p Categorize notes with tags and folders for quick access.
+        .feature-card
+          i.fas.fa-lock
+          h3 Secure Storage
+          p Your notes are encrypted and safe in the cloud.
+
+    // How It Works Section
+    section#how-it-works.how-it-works
+      h2 How It Works
+      .steps-grid
+        .step-card
+          h3 Step 1: Sign Up
+          p Create a free account in seconds.
+        .step-card
+          h3 Step 2: Write Notes
+          p Start capturing your ideas instantly.
+        .step-card
+          h3 Step 3: Sync & Share
+          p Access and share notes across devices.
+
+    // Pricing Section
+    section#pricing.pricing
+      h2 Affordable Plans
+      .pricing-grid
+        .pricing-card
+          h3 Free
+          p $0/month
+          ul
+            li 100 Notes
+            li Basic Editor
+            li Cloud Sync
+          a.pricing-btn(href='/signup') Choose Free
+        .pricing-card
+          h3 Pro
+          p Contact us for pricing
+          ul
+            li Unlimited Notes
+            li Advanced Editor
+            li Collaboration
+          a.pricing-btn(href='https://x.ai/grok') Learn More
+
+    // Footer Section
+    footer.footer
+      .footer-content
+        p &copy; 2025 NoteMaster. All rights reserved.
+        .footer-links
+          a(href='/about') About
+          a(href='/contact') Contact
+          a(href='/privacy') Privacy Policy
+          a(href='/terms') Terms of Service
+        .footer-social
+          a(href='https://twitter.com' target='_blank')
+            i.fab.fa-twitter
+          a(href='https://facebook.com' target='_blank')
+            i.fab.fa-facebook
+          a(href='https://linkedin.com' target='_blank')
+            i.fab.fa-linkedin
+
+    script(src='../js/main.js') 
