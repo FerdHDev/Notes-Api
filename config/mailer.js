@@ -38,12 +38,12 @@ export const sendSecurityNotice = async (cleanUser) => {
     }
 }
 
-export const sendLoginAlert = async (cleanUser, loginDetails) => {
+export const sendLoginAlert = async (cleanUser, ipInfo, loginTime, ipAddress) => {
     const emailContent = `
         <div style="font-family: Arial, sans-serif; font-size: 15px; color: #333; max-width: 600px; margin: auto; padding: 20px;">
   <h2 style="color: #d93025;">⚠️ Suspicious Login Detected</h2>
 
-  <p>Hi <strong>${cleanUser.userName}</strong>,</p>
+  <p>Hi <strong>${cleanUser.username}</strong>,</p>
 
   <p>
     We detected a login to your account from an unfamiliar location or device. If this wasn't you, please take immediate action to secure your account.
@@ -51,12 +51,12 @@ export const sendLoginAlert = async (cleanUser, loginDetails) => {
 
   <p><strong>Login Details:</strong></p>
   <ul style="list-style: none; padding-left: 0;">
-    <li><strong>📍 Location:</strong> ${loginDetails.location}</li>
-    <li><strong>🌐 IP Address:</strong> ${loginDetails.ipAddress}</li>
-    <li><strong>🕒 Time:</strong> ${cleanUser.createdAt.toLocaleDateString()}</li>
+    <li><strong>📍 Location:</strong> ${ipInfo.country}</li>
+    <li><strong>🌐 IP Address:</strong> ${ipAddress}</li>
+    <li><strong>🕒 Time:</strong> ${loginTime}</li>
   </ul>
 
-  <p><strong>Previous Login IP:</strong> ${cleanUser.lastKnownIp}</p>
+  <p><strong>Previous Login IP:</strong> ${ipAddress}</p>
 
   <p style="margin-top: 20px;">
     If this login was <strong>not</strong> made by you, we strongly recommend:

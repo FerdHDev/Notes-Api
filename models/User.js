@@ -34,6 +34,7 @@ const userSchema = new Schema({
         minlength: 6,
         maxlength: 30,
     },
+    ipAddress: String,
     createdAt: {
         type: Date,
         default: Date.now,
