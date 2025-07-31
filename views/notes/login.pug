@@ -1,0 +1,26 @@
+extends ../layouts/layout.pug
+
+block content
+  .login-container
+    .login-left
+      img(src="/images/noteblog-placeholder.png" alt="NoteBlog Illustration")
+      h2 Noteblog makes note-taking simple.
+      p Capture your thoughts, lectures, and ideas effortlessly.
+    .login-right
+      h3 NoteBlog
+      p.small Your Personal Note Space
+      form(action="/signin" method="POST")
+        unless errors.length > 0
+            each error in errors
+                ul.login-error
+                    li.error-message #{error}
+        if error 
+            li.error-message #{error}
+        .form-group
+          label(for="email") Email
+          input#email(type="email" name="email" placeholder="example@gmail.com" required)
+        .form-group
+          label(for="password") Password
+          input#password(type="password" name="password" placeholder="••••••••" required)
+        a.forgot-password(href="/forgot-password") Forgot your password?
+        button(type="submit") Log in

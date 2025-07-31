@@ -44,7 +44,11 @@ const loginUser = asyncHandler(async (req, res) => {
 
         if (!validationResult.isValid) {
             const errors = validationResult.errors.map(error => error.msg)
-            return res.status(400).send(errors)
+            return res.status(400).render("notes/login", {
+                title: "NoteBlog - Login",
+                errors,
+                error: ""
+            })
         }
 
         clean = validationResult.sanitizedData;
@@ -52,11 +56,19 @@ const loginUser = asyncHandler(async (req, res) => {
         user = await User.findOne({ email: clean.email });
 
         if (!user) {
-            return res.status(400).send("Invalid Credentials");
+            return res.status(400).render("notes/login", {
+                title: "NoteBlog - Login",
+                error: "Invalid Credentials",
+                errors: ""
+            });
         }
         const isMatch = await user.matchPassword(clean.password);
         if (!isMatch) {
-            return res.status(400).send("Invalid Credentials");
+            return res.status(400).render("notes/login", {
+                title: "NoteBlog - Login",
+                error: "Invalid Credentials",
+                errors: ""
+            });
         }
 
         if (user.ipAddress !== req.body.ipAddress) {

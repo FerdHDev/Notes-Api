@@ -894,3 +894,39 @@
 [2025-07-26T14:44:05.788Z] [32minfo[39m: MongoDB connected
 [2025-07-26T14:47:32.520Z] [32minfo[39m: [server] is live on: http://localhost:3030
 [2025-07-26T14:47:35.954Z] [32minfo[39m: MongoDB connected
+[2025-07-26T15:28:21.396Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-26T15:28:24.898Z] [32minfo[39m: MongoDB connected
+[2025-07-29T17:26:37.757Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-29T17:28:17.595Z] [31merror[39m: Mongoose connection error Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-07-29T17:40:42.759Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-29T17:41:08.179Z] [31merror[39m: error message: read ECONNABORTED
+[2025-07-29T17:41:45.742Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-29T17:41:49.870Z] [32minfo[39m: MongoDB connected
+[2025-07-31T06:44:33.461Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T06:44:36.881Z] [32minfo[39m: MongoDB connected
+[2025-07-31T06:53:34.447Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T06:56:35.930Z] [31merror[39m: Mongoose connection error Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-07-31T06:56:59.710Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T06:57:03.375Z] [32minfo[39m: MongoDB connected
+[2025-07-31T06:59:58.350Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T07:00:00.700Z] [32minfo[39m: MongoDB connected
+[2025-07-31T07:20:12.368Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T07:20:14.894Z] [32minfo[39m: MongoDB connected
+[2025-07-31T07:27:09.976Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T07:27:13.062Z] [32minfo[39m: MongoDB connected
+[2025-07-31T07:58:44.413Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T07:58:48.335Z] [32minfo[39m: MongoDB connected
+[2025-07-31T08:40:52.101Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T08:40:54.398Z] [32minfo[39m: MongoDB connected
+[2025-07-31T09:33:07.032Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T09:33:36.699Z] [32minfo[39m: MongoDB connected
+[2025-07-31T09:36:27.237Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T09:36:39.328Z] [32minfo[39m: MongoDB connected
+[2025-07-31T09:38:39.892Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T09:39:47.473Z] [31merror[39m: Mongoose connection error Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-07-31T09:39:58.988Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T09:40:05.559Z] [32minfo[39m: MongoDB connected
+[2025-07-31T09:41:50.040Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T09:41:52.143Z] [32minfo[39m: MongoDB connected
+[2025-07-31T09:43:30.492Z] [32minfo[39m: [server] is live on: http://localhost:3030
+[2025-07-31T09:43:32.910Z] [32minfo[39m: MongoDB connected

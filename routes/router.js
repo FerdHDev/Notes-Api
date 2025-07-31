@@ -8,11 +8,12 @@ router.post("/notes/create", validateNoteFields, createNote);
 
 /* User Routes */
 import { signUser, loginUser } from "../controllers/userControllers.js";
-
-/* Page Routes */
-import { indexPage } from "../controllers/pageControllers.js";
-
-router.get("/", indexPage);
 router.post("/sign", validateFields, signUser);
 router.post("/signin", validateLoginFields, loginUser);
+
+/* Page Routes */
+import { indexPage, loginPage } from "../controllers/pageControllers.js";
+
+router.get("/", indexPage);
+router.get("/login", loginPage);
 export default router;
