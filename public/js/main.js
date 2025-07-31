@@ -46,6 +46,7 @@ style.innerHTML = `
     border-radius: 50%;
     cursor: pointer;
     display: none;
+    width: fit-content;
     transition: opacity 0.3s ease;
   }
   .back-to-top:hover {
@@ -53,3 +54,5 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+
+
