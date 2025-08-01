@@ -55,4 +55,8 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-
+document.querySelector("span.toggle-password i").addEventListener("click", (e) => {
+    const pwdEle = document.querySelector(".password-wrapper #password");
+    e.preventDefault()
+    pwdEle.type === "password" ? pwdEle.type = "text" : pwdEle.type = "password"
+})

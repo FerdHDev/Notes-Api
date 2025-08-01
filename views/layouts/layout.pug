@@ -10,6 +10,44 @@ html(lang="en")
         )
         link(rel="stylesheet" href="../css/styles.css")
     body
+        // Navigation Section
+        nav.navbar
+            .nav-brand
+                a(href="#") NoteBlog
+            .nav-links
+                a(href="#features") Features
+                a(href="#how-it-works") How It Works
+                a(href="#pricing") Pricing
+                a(href="/login") Login
+            .nav-toggle
+                i.fas.fa-bars
         block content
+        footer.footer
+            .container
+                .footer-content
+                    .footer-section
+                        h3 Quick Links
+                        ul
+                            li
+                                a(href='#') Home
+                            li
+                                a(href='#') About
+                            li
+                                a(href='#') Services
+                            li
+                                a(href='#') Contact
+                    .footer-section
+                        h3 Contact Us
+                        p Address: 123 NoteBlog St, Tech City
+                        p Email: support@noteblog.com
+                        p Phone: +1-234-567-8900
+                    .footer-section
+                        h3 Follow Us
+                        .social-links
+                            a(href='#') Twitter
+                            a(href='#') Facebook
+                            a(href='#') Instagram
+                        .footer-bottom
+                            p Copyright © 2025 NoteBlog. All rights reserved.
 
     script(src = "../js/main.js")
