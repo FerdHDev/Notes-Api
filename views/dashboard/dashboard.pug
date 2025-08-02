@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title NoteBlog Dashboard
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="../css/dashboard.css")
+  body
+    .dashboard
+      .sidebar
+        h2 NoteBlog
+        ul.nav
+          li
+            a(href='/dashboard') Dashboard
+          li
+            a(href='/dashboard/notes') Notes
+          li
+            a(href='#') Profile
+          li
+            a(href='#') Logout
+      .main-content
+        .header
+          h1 Welcome, User!
+          .user-info
+            span 02:01 PM WAT, Aug 02, 2025
+            button.profile-btn Profile
+        .content
+          .stats
+            .stat-card
+              h3 Total Notes
+              p 15
+            .stat-card
+              h3 Last Edited
+              p 01:30 PM
+            .stat-card
+              h3 Storage Used
+              p 120 MB
+          .recent-activity
+            h3 Recent Activity
+            ul
+              li Edited "Meeting Notes" at 01:15 PM
+              li Created "Project Ideas" at 12:45 PM
+              li Deleted "Old Draft" at 11:30 AM

@@ -14,6 +14,11 @@ router.post("/signin", validateLoginFields, loginUser);
 /* Page Routes */
 import { indexPage, loginPage } from "../controllers/pageControllers.js";
 
+/* Dashboard Rputes */
+import { dashPage, dashNotes } from "../controllers/dashControllers.js";
+
 router.get("/", indexPage);
 router.get("/login", loginPage);
+router.get("/dashboard", dashPage);
+router.get("/dashboard/notes", dashNotes);
 export default router;

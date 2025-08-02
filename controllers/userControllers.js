@@ -79,7 +79,7 @@ const loginUser = asyncHandler(async (req, res) => {
         }
 
         generateToken({ userId: user._id });
-        res.status(200).send("User logged in successfully");
+        res.status(200).redirect("/dashboard");
 
     } catch (err) {
         console.log(err, { depth: null })
